@@ -28,6 +28,7 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 | File | Used for | Source |
 |---|---|---|
 | `logo-pickle-duels.png` | Header logo, all pages | Own artwork — © RallyXP |
+| `founder-huyen.jpg` | Huyen Hoang's founder card (`/company/`) | Own photograph — © RallyXP |
 
 918×262 PNG with transparency (24 KB), rendered at 36px tall in the header
 (30px below 26rem). The header bar stays 68px regardless.
@@ -36,6 +37,9 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 cannot sit on the dark footer — the footer still uses the type-set wordmark in white.
 Supply a white-text variant (`logo-pickle-duels-light.png`) and the footer can use the
 real logo too.
+
+`founder-huyen.jpg` is an 800×800 source cropped to the card's 4:5 box by
+`object-fit: cover`. Converted from a 396 KB PNG to a 64 KB JPEG with `sips`.
 
 An SVG would also be worth having: it would stay crisp at any size and on any
 display, and would likely be smaller than 24 KB.
@@ -54,7 +58,6 @@ See the README section *Replacing a placeholder with a real photo*.
 | VenueOS screenshot — registration list | `organize/` | Your own VenueOS capture |
 | VenueOS screenshot — tournament creation screen | `organize/` | Your own VenueOS capture |
 | drop six team pickleball photos into this gallery | `company/` | Your own photograph |
-| photo of Huyen playing pickleball | `company/` | Your own photograph |
 | photo of Jackson playing pickleball | `company/` | Your own photograph |
 | photo of a tournament desk or organizer with a tablet | `/` | Stock or your own |
 | replace these with the official App Store and Google Play badge artwork | `play/` | Your own brand asset |

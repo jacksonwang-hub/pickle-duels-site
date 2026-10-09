@@ -9,4 +9,4 @@ PORT="${1:-${PORT:-4321}}"
 echo
 echo "Pickle Duels site: http://localhost:${PORT}"
 echo "Press Ctrl+C to stop."
-exec python3 -m http.server "$PORT" --directory dist
+exec python3 tools/serve.py "$PORT" dist

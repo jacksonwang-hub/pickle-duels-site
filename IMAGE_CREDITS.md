@@ -23,6 +23,23 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 - **`king-of-the-court.jpg`** — Pickle ball game
 - **`paddles-gear.jpg`** — Pickleball session details — paddle, ball, and court setup. Gear I use → linktr.ee/alexsaks.inspiration
 
+## Brand assets
+
+| File | Used for | Source |
+|---|---|---|
+| `logo-pickle-duels.png` | Header logo, all pages | Own artwork — © RallyXP |
+
+918×262 PNG with transparency (24 KB), rendered at 36px tall in the header
+(30px below 26rem). The header bar stays 68px regardless.
+
+**A reversed version would help.** The wordmark text in this file is black, so it
+cannot sit on the dark footer — the footer still uses the type-set wordmark in white.
+Supply a white-text variant (`logo-pickle-duels-light.png`) and the footer can use the
+real logo too.
+
+An SVG would also be worth having: it would stay crisp at any size and on any
+display, and would likely be smaller than 24 KB.
+
 ## Still needed
 
 These slots render a clearly labeled placeholder until a real file is added.
@@ -37,7 +54,6 @@ See the README section *Replacing a placeholder with a real photo*.
 | VenueOS screenshot — registration list | `organize/` | Your own VenueOS capture |
 | VenueOS screenshot — tournament creation screen | `organize/` | Your own VenueOS capture |
 | drop six team pickleball photos into this gallery | `company/` | Your own photograph |
-| logo artwork | `/, /404, company/, organize/, organize/thanks/, play/` | Your own brand asset |
 | photo of Huyen playing pickleball | `company/` | Your own photograph |
 | photo of Jackson playing pickleball | `company/` | Your own photograph |
 | photo of a tournament desk or organizer with a tablet | `/` | Stock or your own |

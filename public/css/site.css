@@ -263,6 +263,8 @@ a { color: inherit; }
 }
 
 .wordmark {
+  display: flex;
+  align-items: center;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.25rem;
@@ -274,6 +276,19 @@ a { color: inherit; }
   white-space: nowrap;
 }
 .wordmark__dot { color: var(--court); }
+
+/* Logo lockup. Height is capped well under the 48px header CTA so the
+   68px bar height is set by --header-h alone and cannot grow. The
+   width/height attributes on the <img> reserve the box and avoid layout
+   shift while the PNG loads. */
+.wordmark__img {
+  display: block;
+  height: 36px;
+  width: auto;
+}
+@media (max-width: 26rem) {
+  .wordmark__img { height: 30px; }
+}
 
 .nav { display: none; }
 .nav__list {

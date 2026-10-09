@@ -1,0 +1,104 @@
+---
+layout: base.html
+title: Company — Pickle Duels
+description: Pickle Duels is powered by RallyXP. Meet founders Huyen Hoang and Jackson Wang, and the spirit behind the app and VenueOS.
+ctaLabel: Book a Demo
+ctaHref: /organize/#demo
+ctaClass: btn--court
+playCurrent:
+organizeCurrent:
+companyCurrent: aria-current="page"
+---
+{% include components/page-hero.html
+   eyebrow="Company"
+   title="We make pickleball more fun to play and easier to run"
+   lede="Pickle Duels is powered by RallyXP — a small team that loves sports, loves competition, and loves building new things."
+%}
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Founders</span>
+        <h2>Who we are</h2>
+      </div>
+
+      <div class="founder-grid">
+{% include components/founder-card.html
+   name="Huyen Hoang"
+   role="Co-founder"
+   photoLabel="[PLACEHOLDER: photo of Huyen playing pickleball]"
+   bio="[PLACEHOLDER: short bio for Huyen Hoang — background, what she works on at RallyXP, how she got into pickleball]"
+%}
+{% include components/founder-card.html
+   name="Jackson Wang"
+   role="Co-founder"
+   photoLabel="[PLACEHOLDER: photo of Jackson playing pickleball]"
+   bio="[PLACEHOLDER: short bio for Jackson Wang — background, what he works on at RallyXP, how he got into pickleball]"
+%}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--chalk">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What drives us</span>
+        <h2>How we play</h2>
+      </div>
+
+      <div class="values-grid">
+{% include components/value.html
+   title="Fun first"
+   body="If it isn&#39;t fun, it isn&#39;t worth building. Every format and feature has to make the game better on the court."
+%}
+{% include components/value.html
+   title="We love sports"
+   body="We&#39;re players before we&#39;re builders. We show up for league night, and we bring that back into the product."
+%}
+{% include components/value.html
+   title="Competitive streak"
+   body="We keep score. A little rivalry makes everyone better — which is exactly why duels sit at the heart of the app."
+%}
+{% include components/value.html
+   title="Make new things"
+   body="We&#39;d rather ship something that didn&#39;t exist yesterday than polish something that already works."
+%}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">On the courts</span>
+        <h2>Team pickleball</h2>
+        <p class="lede">[PLACEHOLDER: drop six team pickleball photos into this gallery]</p>
+      </div>
+
+      <div class="gallery">
+{% include components/placeholder.html ratio="ph--1x1" label="[PLACEHOLDER: team photo 1]" %}
+{% include components/placeholder.html ratio="ph--1x1" label="[PLACEHOLDER: team photo 2]" %}
+{% include components/placeholder.html ratio="ph--1x1" label="[PLACEHOLDER: team photo 3]" %}
+{% include components/placeholder.html ratio="ph--1x1" label="[PLACEHOLDER: team photo 4]" %}
+{% include components/placeholder.html ratio="ph--1x1" label="[PLACEHOLDER: team photo 5]" %}
+{% include components/placeholder.html ratio="ph--1x1" label="[PLACEHOLDER: team photo 6]" %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mint section--tight">
+    <div class="container container--narrow" style="text-align:center;">
+      <h2 style="font-size:var(--step-3);">Pickle Duels is powered by <span style="color:var(--court);">RallyXP</span></h2>
+      <p class="lede" style="margin-inline:auto;margin-top:1rem;">
+        RallyXP builds the Pickle Duels player app and VenueOS, our pickleball tournament management software.
+      </p>
+    </div>
+  </section>
+
+{% include components/cta-band.html
+   modifier=""
+   eyebrow="Get involved"
+   title="Come play, or let us run your event"
+   body="Download the app and join a duel, or book a VenueOS demo and we&#39;ll walk through your next tournament together."
+   actions="<a class='btn btn--volt btn--lg' href='/play/'>Get the App</a><a class='btn btn--outline-light btn--lg' href='/organize/#demo'>Book a Demo</a>"
+%}

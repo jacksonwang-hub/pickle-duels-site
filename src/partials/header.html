@@ -1,0 +1,33 @@
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="wordmark" href="/">
+        Pickle&nbsp;Duels<span class="wordmark__dot">.</span>
+        <span class="sr-only">— home. [PLACEHOLDER: logo artwork]</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="/play/" {{ playCurrent }}>Play</a></li>
+          <li><a class="nav__link" href="/organize/" {{ organizeCurrent }}>Organize</a></li>
+          <li><a class="nav__link" href="/company/" {{ companyCurrent }}>Company</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn {{ ctaClass }} header__cta" href="{{ ctaHref }}">{{ ctaLabel }}</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle__bars"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- Sits outside <header> on purpose: the header's backdrop-filter would
+       otherwise become this panel's containing block and collapse its height. -->
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <a class="mobile-nav__link" href="/play/" {{ playCurrent }}>Play</a>
+    <a class="mobile-nav__link" href="/organize/" {{ organizeCurrent }}>Organize</a>
+    <a class="mobile-nav__link" href="/company/" {{ companyCurrent }}>Company</a>
+    <a class="btn {{ ctaClass }} btn--lg btn--block" href="{{ ctaHref }}">{{ ctaLabel }}</a>
+  </div>

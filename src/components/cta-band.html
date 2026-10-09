@@ -1,0 +1,9 @@
+  <section class="section cta-band {{ modifier }} on-dark">
+    <div class="container container--narrow cta-band__inner">
+      {% if eyebrow %}<span class="eyebrow eyebrow--light">{{ eyebrow }}</span>{% endif %}
+      <h2>{{ title }}</h2>
+      <p>{{ body }}</p>
+      <div class="btn-row">{{ actions }}</div>
+      {% if note %}<p class="hero__note">{{ note }}</p>{% endif %}
+    </div>
+  </section>

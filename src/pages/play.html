@@ -1,0 +1,109 @@
+---
+layout: base.html
+title: Play — Pickle Duels
+description: Download Pickle Duels to track your results, compete with friends in fun formats like King of the Court, and win real-world prizes like pickleball gear.
+ctaLabel: Get the App
+ctaHref: #get-the-app
+ctaClass: btn--volt
+playCurrent: aria-current="page"
+organizeCurrent:
+companyCurrent:
+---
+{% include components/page-hero.html
+   eyebrow="For players"
+   title="Download. Duel. Dominate."
+   lede="Track your results, compete with friends, and level up your skills. See you on the courts!"
+   storeBadges="1"
+   note="Free to download."
+%}
+
+  <section class="section" id="king-of-the-court">
+    <div class="container">
+      <div class="spotlight">
+        <div class="spotlight__text reveal">
+          <span class="eyebrow">Featured format</span>
+          <h2>King of the Court</h2>
+          <p class="lede">Hold the court. Keep the crown.</p>
+          <p style="margin-top:1rem;color:var(--slate);">
+            Winner stays on. Every challenger who steps up is playing for your spot — and
+            every round you survive puts another notch on the board.
+          </p>
+          <ul class="spotlight__list">
+            <li>Queue up, duel the current king, and take the court if you win.</li>
+            <li>Results feed straight into your record and the leaderboards.</li>
+            <li>[PLACEHOLDER: King of the Court specifics — scoring, round length, player counts, how a session starts and ends]</li>
+          </ul>
+        </div>
+        <div class="spotlight__media reveal">
+{% include components/placeholder.html ratio="ph--4x3" label="[PLACEHOLDER: photo of a busy court with players waiting to rotate in]" %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--chalk">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">In the app</span>
+        <h2>Everything but the paddle</h2>
+      </div>
+
+      <div class="feature-grid">
+{% include components/feature-card.html
+   icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg>'
+   title="QR code score tracking"
+   body="Scan another player&#39;s QR code in the app and instantly team up for a game of pickleball. No extra steps — just scan and play."
+%}
+{% include components/feature-card.html
+   icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-6"/></svg>'
+   title="Climb leaderboards"
+   body="Think you&#39;ve got what it takes? Play, win, and rise through the ranks. Compete with players worldwide and track your progress in real time."
+%}
+{% include components/feature-card.html
+   icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M9 8h6M9 12h4"/></svg>'
+   title="Learn pickleball"
+   body="From the basic rules to smarter strategy. Quick tips, tutorials, and in-game help get you playing like a pro in no time."
+%}
+{% include components/feature-card.html
+   icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>'
+   title="Earn rewards and discounts"
+   body="Play more, earn more. Every win collects points that unlock rewards and real-world discounts. It&#39;s fun, competitive — and it actually pays off."
+%}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="prizes">
+    <div class="container">
+      <div class="spotlight">
+        <div class="spotlight__media reveal">
+{% include components/placeholder.html ratio="ph--4x3" label="[PLACEHOLDER: photo of pickleball paddles and gear]" %}
+        </div>
+        <div class="spotlight__text reveal">
+          <span class="accent-rule" aria-hidden="true"></span>
+          <span class="eyebrow">Prizes</span>
+          <h2>Play for more than bragging rights</h2>
+          <p class="lede">Win real-world prizes like pickleball gear.</p>
+          <ul class="spotlight__list">
+            <li>[PLACEHOLDER: what prizes are on offer, and how often]</li>
+            <li>[PLACEHOLDER: how winners are selected and notified]</li>
+            <li>[PLACEHOLDER: eligibility — regions, age, account requirements]</li>
+          </ul>
+          <p style="margin-top:1.5rem;font-size:var(--step--1);color:var(--slate);">
+            Prizes are subject to the
+            <a href="[PLACEHOLDER: Official Rules / Prize Terms URL]">Official Rules &amp; Prize Terms</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-band on-dark" id="get-the-app">
+    <div class="container container--narrow cta-band__inner">
+      <span class="eyebrow eyebrow--light">Get started</span>
+      <h2>Your first duel is one scan away</h2>
+      <p>Download Pickle Duels free, scan a QR code, and play. See you on the courts!</p>
+{% include components/store-badges.html modifier="store-badge--light" %}
+      <p class="hero__note">[PLACEHOLDER: replace these with the official App Store and Google Play badge artwork]</p>
+    </div>
+  </section>

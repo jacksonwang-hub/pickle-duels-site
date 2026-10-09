@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+{% include partials/head.html %}
+<body>
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <a class="skip-link" href="#main">Skip to main content</a>
+{% include partials/header.html %}
+  <main id="main">
+{{ content }}
+  </main>
+{% include partials/footer.html %}
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

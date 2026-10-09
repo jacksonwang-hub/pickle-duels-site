@@ -1,0 +1,12 @@
+      <article class="capability {{ modifier }} reveal" id="{{ id }}">
+        <div class="capability__text">
+          <span class="capability__step" aria-hidden="true">{{ step }}</span>
+          <span class="eyebrow">{{ eyebrow }}</span>
+          <h3>{{ title }}</h3>
+          <p>{{ body }}</p>
+          <ul class="capability__list">{{ bullets }}</ul>
+        </div>
+        <div class="capability__media">
+          {% include components/placeholder.html ratio="ph--16x9" label="{{ mediaLabel }}" %}
+        </div>
+      </article>

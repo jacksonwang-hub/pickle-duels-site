@@ -1,0 +1,201 @@
+---
+layout: base.html
+title: VenueOS — Pickleball tournament management | Pickle Duels
+description: VenueOS is pickleball tournament management software for clubs and organizers — create tournaments, manage registrations, run check-in, track pool and bracket play, and invite past participants back.
+ctaLabel: Book a Demo
+ctaHref: #demo
+ctaClass: btn--court
+playCurrent:
+organizeCurrent: aria-current="page"
+companyCurrent:
+---
+{% include components/page-hero.html
+   eyebrow="VenueOS"
+   title="Pickleball tournament management"
+   lede="Run your event end to end: create the tournament, manage registrations, check players in, track pool and bracket play through to medals and results — then invite everyone back next time."
+   actions="<a class='btn btn--court btn--lg' href='#demo'>Book a Demo</a><a class='btn btn--outline-light btn--lg' href='#capabilities'>See how it works</a>"
+%}
+
+  <section class="section" id="capabilities">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Built around the tournament lifecycle</h2>
+        <p class="lede">Every stage of your event, in the order you actually run it.</p>
+      </div>
+
+{% include components/capability.html
+   id="create"
+   step="1"
+   modifier=""
+   eyebrow="Create tournaments"
+   title="Set up your event, then open the gates"
+   body="Build a tournament in VenueOS and publish it so players can find it and sign up."
+   bullets="<li>Create a tournament and publish it for registration</li><li>Keep every event you run in one place</li><li>[PLACEHOLDER: setup specifics — formats, divisions, scheduling, court and venue configuration]</li>"
+   mediaLabel="[PLACEHOLDER: VenueOS screenshot — tournament creation screen]"
+%}
+{% include components/capability.html
+   id="registrations"
+   step="2"
+   modifier="capability--reverse"
+   eyebrow="Manage registrations"
+   title="Fill your draws without the spreadsheet"
+   body="Registrations land in VenueOS as they come in, so you always know who is signed up and where they belong."
+   bullets="<li>Collect registrations and player details in one list</li><li>Capture player emails at registration for later outreach</li><li>[PLACEHOLDER: registration specifics — partner pairing, division limits, waitlists, payments, refunds]</li>"
+   mediaLabel="[PLACEHOLDER: VenueOS screenshot — registration list]"
+%}
+{% include components/capability.html
+   id="check-in"
+   step="3"
+   modifier=""
+   eyebrow="Check-in on event day"
+   title="Day-of check-in that keeps courts moving"
+   body="Check players in as they arrive so your first round starts on time and you know exactly who showed up."
+   bullets="<li>Mark players checked in as they arrive</li><li>See who is still missing before play starts</li><li>[PLACEHOLDER: check-in specifics — self check-in, staff view, no-show and substitution handling]</li>"
+   mediaLabel="[PLACEHOLDER: VenueOS screenshot — event-day check-in screen]"
+%}
+{% include components/capability.html
+   id="pool-play"
+   step="4"
+   modifier="capability--reverse"
+   eyebrow="Track pool play"
+   title="Pool play that keeps its own score"
+   body="Record pool results as matches finish and let VenueOS keep the standings current."
+   bullets="<li>Enter match results during pool rounds</li><li>Standings update as scores come in</li><li>[PLACEHOLDER: pool play specifics — pool sizing, tiebreak rules, advancement, score entry method]</li>"
+   mediaLabel="[PLACEHOLDER: VenueOS screenshot — pool play standings]"
+%}
+{% include components/capability.html
+   id="brackets"
+   step="5"
+   modifier=""
+   eyebrow="Track bracket play"
+   title="Brackets through to medals and results"
+   body="Move from pools into brackets and track every round to the final — ending with medalists and published results."
+   bullets="<li>Advance players through bracket rounds</li><li>Finish with medals and final results for every division</li><li>[PLACEHOLDER: bracket specifics — bracket types supported, consolation rounds, seeding, how results are published]</li>"
+   mediaLabel="[PLACEHOLDER: VenueOS screenshot — bracket view and final results]"
+%}
+{% include components/capability.html
+   id="re-engage"
+   step="6"
+   modifier="capability--reverse"
+   eyebrow="Re-engage past participants"
+   title="Your next event starts with your last one"
+   body="Invite prior registrants to your upcoming tournaments by email, using the addresses you already collected at registration."
+   bullets="<li>Email past registrants about a future tournament</li><li>Built on the emails collected during registration</li><li>[PLACEHOLDER: outreach specifics — audience selection, templates, scheduling, unsubscribe handling]</li>"
+   mediaLabel="[PLACEHOLDER: VenueOS screenshot — inviting past participants by email]"
+%}
+    </div>
+  </section>
+
+{% include components/cta-band.html
+   modifier="cta-band--court"
+   eyebrow="See it on your event"
+   title="Book a demo"
+   body="Walk through VenueOS with us using your own tournament as the example."
+   actions="<a class='btn btn--volt btn--lg' href='#demo'>Request a demo</a>"
+%}
+
+  <section class="section section--chalk" id="demo">
+    <div class="container">
+      <div class="form-shell">
+        <div class="form-aside">
+          <span class="eyebrow">Request a demo</span>
+          <h2>Let&#39;s run your next tournament</h2>
+          <p class="lede">Tell us a little about your club and we&#39;ll be in touch to set up a walkthrough.</p>
+          <ul class="form-aside__list">
+            <li><strong>A real walkthrough</strong>We&#39;ll show VenueOS against the kind of event you actually run.</li>
+            <li><strong>Bring your questions</strong>Formats, divisions, check-in, brackets — ask about your edge cases.</li>
+            <li><strong>Already a customer?</strong><a href="https://venue.pickleduels.com/">Sign in to VenueOS</a>.</li>
+          </ul>
+        </div>
+
+        <div>
+          <form
+            class="form"
+            name="demo-request"
+            method="POST"
+            action="/organize/thanks/"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            data-enhanced
+          >
+            <input type="hidden" name="form-name" value="demo-request">
+            <p class="hp" aria-hidden="true">
+              <label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+
+            <div class="form__grid form__grid--2">
+              <div class="field">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+                <span class="error" id="name-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+                <span class="error" id="email-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form__grid form__grid--2" style="margin-top:1.5rem;">
+              <div class="field">
+                <label for="organization">Club / organization <span aria-hidden="true">*</span></label>
+                <input id="organization" name="organization" type="text" autocomplete="organization" required>
+                <span class="error" id="organization-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="role">Your role <span aria-hidden="true">*</span></label>
+                <select id="role" name="role" required>
+                  <option value="">Choose one</option>
+                  <option>Tournament director</option>
+                  <option>Club owner or manager</option>
+                  <option>Head pro or coach</option>
+                  <option>Program or events coordinator</option>
+                  <option>Volunteer organizer</option>
+                  <option>Other</option>
+                </select>
+                <span class="error" id="role-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form__grid" style="margin-top:1.5rem;">
+              <div class="field">
+                <label for="events-per-year">Approximate events per year <span aria-hidden="true">*</span></label>
+                <select id="events-per-year" name="events-per-year" required>
+                  <option value="">Choose one</option>
+                  <option>1–2</option>
+                  <option>3–5</option>
+                  <option>6–12</option>
+                  <option>More than 12</option>
+                  <option>Not sure yet</option>
+                </select>
+                <span class="error" id="events-per-year-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="message">Message <span class="hint">(optional)</span></label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your tournaments, or anything you want to see in the demo."></textarea>
+                <span class="error" id="message-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form__footer">
+              <button class="btn btn--court btn--lg" type="submit">Request a demo</button>
+              <p class="form__fineprint">
+                We&#39;ll only use your details to contact you about VenueOS.
+                See our <a href="[PLACEHOLDER: Privacy Policy URL]">Privacy Policy</a>.
+              </p>
+            </div>
+          </form>
+
+          <div class="form-success" id="form-success" role="status" hidden>
+            <span class="form-success__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <h3>Request received</h3>
+            <p>Thanks — we&#39;ve got your details and we&#39;ll be in touch to set up your VenueOS walkthrough.</p>
+            <a class="link-arrow" href="/play/">While you wait, see the player app <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

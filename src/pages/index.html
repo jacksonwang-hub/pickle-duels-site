@@ -1,0 +1,81 @@
+---
+layout: base.html
+title: Pickle Duels — Play pickleball duels. Run better tournaments.
+description: Download the Pickle Duels app to compete in fun formats and win real-world prizes, or run your club's tournaments end to end with VenueOS.
+ctaLabel: Get the App
+ctaHref: /play/
+ctaClass: btn--volt
+playCurrent:
+organizeCurrent:
+companyCurrent:
+---
+  <section class="hero hero--noimage">
+    <div class="hero__ph-badge">[PLACEHOLDER: hero photo — players mid-rally]</div>
+    <div class="container hero__inner">
+      <h1 class="hero__title">
+        <span class="line">Download.</span>
+        <span class="line">Duel.</span>
+        <span class="line accent">Dominate.</span>
+      </h1>
+      <p class="lede lede--light hero__lede">
+        Track your results, compete with friends, and level up your skills.
+        Play fun formats like King of the Court and win real-world prizes.
+      </p>
+
+      <div class="hero__actions">
+{% include components/store-badges.html modifier="store-badge--light" %}
+      </div>
+      <p class="hero__note">Free to download. See you on the courts!</p>
+
+      <div class="hero__lane">
+        <div class="hero__lane-text">
+          <strong>Run events instead?</strong>
+          <span>VenueOS is our pickleball tournament management software for clubs and organizers.</span>
+        </div>
+        <a class="btn btn--volt" href="/organize/">Meet VenueOS</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Two ways in</span>
+        <h2>Pick your side of the net</h2>
+        <p class="lede" style="margin-inline:auto;">
+          Pickle Duels is built for the people on the court and the people running the show.
+        </p>
+      </div>
+
+      <div class="path-grid">
+{% include components/path-card.html
+   mediaLabel="[PLACEHOLDER: photo of recreational players celebrating a point]"
+   eyebrow="For players"
+   title="Play, compete, win"
+   body="Scan in, duel your friends, climb the leaderboards, and earn rewards for every win."
+   bullets="<li>King of the Court and other fun formats</li><li>QR code score tracking</li><li>Real-world prizes like pickleball gear</li>"
+   ctaLabel="Get the App"
+   ctaHref="/play/"
+   ctaClass="btn--ink"
+%}
+{% include components/path-card.html
+   mediaLabel="[PLACEHOLDER: photo of a tournament desk or organizer with a tablet]"
+   eyebrow="For organizers &amp; clubs"
+   title="Run the whole tournament"
+   body="VenueOS takes your event from the first registration through to medals and final results."
+   bullets="<li>Registrations, check-in, pools and brackets</li><li>Results and medals in one place</li><li>Invite past participants to your next event</li>"
+   ctaLabel="Book a Demo"
+   ctaHref="/organize/#demo"
+   ctaClass="btn--court"
+%}
+      </div>
+    </div>
+  </section>
+
+{% include components/cta-band.html
+   modifier=""
+   eyebrow="Powered by RallyXP"
+   title="One company, both sides of the game"
+   body="We build the app players compete on and the software organizers run on — because the best pickleball experiences need both."
+   actions="<a class='btn btn--volt btn--lg' href='/play/'>Get the App</a><a class='btn btn--outline-light btn--lg' href='/organize/#demo'>Book a Demo</a>"
+%}

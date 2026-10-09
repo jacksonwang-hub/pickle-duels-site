@@ -1,0 +1,12 @@
+      <article class="path-card reveal">
+        <div class="path-card__media">
+          {% include components/placeholder.html ratio="ph--16x9" label="{{ mediaLabel }}" %}
+        </div>
+        <div class="path-card__body">
+          <span class="eyebrow">{{ eyebrow }}</span>
+          <h3>{{ title }}</h3>
+          <p>{{ body }}</p>
+          <ul class="path-card__list">{{ bullets }}</ul>
+          <a class="btn {{ ctaClass }}" href="{{ ctaHref }}">{{ ctaLabel }}</a>
+        </div>
+      </article>

@@ -1,0 +1,14 @@
+  <section class="page-hero on-dark">
+    <div class="container">
+      {% if eyebrow %}<span class="eyebrow eyebrow--light">{{ eyebrow }}</span>{% endif %}
+      <h1>{{ title }}</h1>
+      <p class="lede lede--light page-hero__lede">{{ lede }}</p>
+      {% if storeBadges %}
+      <div class="page-hero__actions">
+{% include components/store-badges.html modifier="store-badge--light" %}
+      </div>
+      {% endif %}
+      {% if actions %}<div class="page-hero__actions">{{ actions }}</div>{% endif %}
+      {% if note %}<p class="hero__note">{{ note }}</p>{% endif %}
+    </div>
+  </section>

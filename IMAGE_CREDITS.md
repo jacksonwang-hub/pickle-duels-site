@@ -38,8 +38,9 @@ cannot sit on the dark footer — the footer still uses the type-set wordmark in
 Supply a white-text variant (`logo-pickle-duels-light.png`) and the footer can use the
 real logo too.
 
-`founder-huyen.jpg` is an 800×800 source cropped to the card's 4:5 box by
-`object-fit: cover`. Converted from a 396 KB PNG to a 64 KB JPEG with `sips`.
+`founder-huyen.jpg` is an 800×800 source shown as a circular avatar
+(160px desktop, 120px mobile) cropped by `object-fit: cover`. Converted from a
+396 KB PNG to a 64 KB JPEG with `sips`. A square source is ideal for this slot.
 
 An SVG would also be worth having: it would stay crisp at any size and on any
 display, and would likely be smaller than 24 KB.

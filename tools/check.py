@@ -14,10 +14,16 @@ DIST = Path(__file__).resolve().parent.parent / "dist"
 PLACEHOLDER = re.compile(r"\[PLACEHOLDER:[^\]]*\]")
 
 
+COMMENT = re.compile(r"<!--.*?-->", re.S)
+
+
 def load():
+    """Load every built page with HTML comments stripped. Commented-out markup
+    is not rendered, so counting its links or placeholders would be a false
+    positive -- the site ships with a commented hero-image example."""
     if not DIST.is_dir():
         sys.exit("dist/ not found — run `python3 build.py` first.")
-    return {str(p.relative_to(DIST)): p.read_text(encoding="utf-8")
+    return {str(p.relative_to(DIST)): COMMENT.sub("", p.read_text(encoding="utf-8"))
             for p in sorted(DIST.rglob("*.html"))}
 
 

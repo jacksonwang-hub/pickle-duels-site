@@ -10,6 +10,13 @@ organizeCurrent:
 companyCurrent:
 ---
   <section class="hero hero--noimage">
+    <!-- To use a real hero photo: delete the badge div below, swap the section
+         class to just "hero", and uncomment this block. -->
+    <!--
+    <div class="hero__media">
+      <img src="/images/hero-play.jpg" alt="Two players mid-rally at the net during a pickleball game">
+    </div>
+    -->
     <div class="hero__ph-badge">[PLACEHOLDER: hero photo — players mid-rally]</div>
     <div class="container hero__inner">
       <h1 class="hero__title">
@@ -49,6 +56,8 @@ companyCurrent:
 
       <div class="path-grid">
 {% include components/path-card.html
+   image=""
+   alt=""
    mediaLabel="[PLACEHOLDER: photo of recreational players celebrating a point]"
    eyebrow="For players"
    title="Play, compete, win"
@@ -59,6 +68,8 @@ companyCurrent:
    ctaClass="btn--ink"
 %}
 {% include components/path-card.html
+   image=""
+   alt=""
    mediaLabel="[PLACEHOLDER: photo of a tournament desk or organizer with a tablet]"
    eyebrow="For organizers &amp; clubs"
    title="Run the whole tournament"

@@ -544,11 +544,22 @@ a { color: inherit; }
   text-transform: uppercase;
   max-width: 28ch;
 }
-.ph--16x9 { aspect-ratio: 16 / 9; }
-.ph--4x3 { aspect-ratio: 4 / 3; }
-.ph--1x1 { aspect-ratio: 1 / 1; }
-.ph--portrait { aspect-ratio: 4 / 5; }
-.ph--round { border-radius: var(--r-pill); }
+
+/* Shared by placeholders and real images, so swapping one for the other
+   never changes the box the layout reserves. */
+.ratio-16x9 { aspect-ratio: 16 / 9; }
+.ratio-4x3 { aspect-ratio: 4 / 3; }
+.ratio-1x1 { aspect-ratio: 1 / 1; }
+.ratio-portrait { aspect-ratio: 4 / 5; }
+
+/* A real photograph filling one of those boxes. */
+.media {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--r-photo);
+}
 
 /* Short accent rule — decorative, carries no information. */
 .accent-rule {

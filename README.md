@@ -179,6 +179,65 @@ Rules this site follows, and edits should keep:
 
 ---
 
+## Replacing a placeholder with a real photo
+
+Every image slot renders a labeled placeholder until you give it a file. Swapping
+one in is a two-step change — no markup restructuring.
+
+**1. Drop the file into `public/images/`.** It is copied to `dist/images/` verbatim.
+
+**2. Fill in `image` and `alt` on the call that owns that slot.** Each one already has
+the parameters, left empty:
+
+```html
+{% include components/founder-card.html
+   name="Huyen Hoang"
+   role="Co-founder"
+   photo="/images/huyen.jpg"
+   alt="Huyen Hoang returning a shot during a pickleball rally"
+   photoLabel="[PLACEHOLDER: photo of Huyen playing pickleball]"
+   bio="..."
+%}
+```
+
+Leave `photoLabel` / `mediaLabel` alone — it is ignored once a photo is present, and
+keeps working as the fallback if you ever remove the image again.
+
+| Slot | Parameters | Lives in |
+|---|---|---|
+| Founder portrait | `photo`, `alt` | `src/pages/company.html` |
+| VenueOS screenshot | `image`, `alt` | `src/pages/organize.html` |
+| Home path card | `image`, `alt` | `src/pages/index.html` |
+| Play spotlight, team gallery | `image`, `alt` | `src/pages/play.html`, `src/pages/company.html` |
+
+**The homepage hero is different** — it is a full-bleed background, not a slot. In
+`src/pages/index.html` there is a commented `.hero__media` block: uncomment it, delete
+the `.hero__ph-badge` div, and change `class="hero hero--noimage"` to `class="hero"`.
+
+### Writing the alt text
+
+`alt` describes the photo for screen readers and is required on every image you add.
+Describe what is happening, not the file: *"Two players mid-rally at the net"*, not
+*"hero image"*. For a purely decorative photo, pass `alt=""` deliberately.
+
+### Sizing
+
+Images are cropped to the slot's aspect ratio with `object-fit: cover`, so exact
+dimensions do not matter, but aim near the target shape to avoid awkward crops:
+
+| Slot | Ratio | Suggested width |
+|---|---|---|
+| Hero | full-bleed | 2400px |
+| Screenshots, path cards | 16:9 | 1600px |
+| Play spotlights | 4:3 | 1400px |
+| Founder portraits | 4:5 | 1000px |
+| Team gallery | 1:1 | 800px |
+
+Compress before committing — these are served as-is, with no build-time optimization.
+Every added image needs a row in `IMAGE_CREDITS.md`.
+
+---
+
 ## The demo request form
 
 `/organize/#demo` uses **Netlify Forms** — no backend.

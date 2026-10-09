@@ -90,7 +90,11 @@ def expand_includes(text, context, depth=0):
         name, raw_params = match.group(1).strip(), match.group(2)
         local = dict(context)
         for pm in RE_PARAM.finditer(raw_params):
-            local[pm.group(1)] = unquote(pm.group(2))
+            # Resolve the value against the CALLER's context first. Without this
+            # a param written as key="{{ other }}" would reach the child as the
+            # literal text "{{ other }}" -- which {% if key %} reads as truthy
+            # no matter what `other` actually holds.
+            local[pm.group(1)] = substitute(unquote(pm.group(2)), context)
         body = resolve_include(name).read_text(encoding="utf-8")
         # Render the include fully in its own context before splicing it in,
         # so its {% if %} / {{ }} see the params it was called with.

@@ -1,0 +1,1 @@
+{% if image %}<img class="media {{ ratio }}" src="{{ image }}" alt="{{ alt }}" loading="lazy" decoding="async">{% else %}{% include components/placeholder.html ratio="{{ ratio }}" label="{{ label }}" %}{% endif %}

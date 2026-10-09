@@ -1,5 +1,10 @@
-  <section class="page-hero on-dark">
-    <div class="container">
+  <section class="page-hero on-dark{% if image %} page-hero--media{% endif %}">
+    {% if image %}
+    <div class="page-hero__media">
+      <img src="{{ image }}" alt="{{ imageAlt }}">
+    </div>
+    {% endif %}
+    <div class="container page-hero__inner">
       {% if eyebrow %}<span class="eyebrow eyebrow--light">{{ eyebrow }}</span>{% endif %}
       <h1>{{ title }}</h1>
       <p class="lede lede--light page-hero__lede">{{ lede }}</p>

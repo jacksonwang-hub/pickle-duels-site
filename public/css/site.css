@@ -416,8 +416,25 @@ a { color: inherit; }
 }
 .hero__lane-text span { color: rgba(255, 255, 255, 0.85); font-size: var(--step-0); }
 
-/* Simple page hero for interior pages */
-.page-hero { background: var(--ink); color: var(--white); padding-block: clamp(3rem, 7vw, 5.5rem); }
+/* Interior page hero. Solid ink by default; with a photo it gets the same
+   treatment as the home hero -- cover image under a gradient scrim heavy
+   enough to hold white text at AA on any part of the photograph. */
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--white);
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+}
+.page-hero__media { position: absolute; inset: 0; }
+.page-hero__media img { width: 100%; height: 100%; object-fit: cover; }
+.page-hero__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 21, 18, 0.88) 0%, rgba(11, 21, 18, 0.74) 50%, rgba(11, 21, 18, 0.9) 100%);
+}
+.page-hero__inner { position: relative; z-index: 1; }
 .page-hero__lede { margin-top: var(--space-lg); }
 .page-hero__actions { margin-top: var(--space-xl); }
 

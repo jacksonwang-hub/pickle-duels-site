@@ -15,6 +15,9 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 | `players-rally.jpg` | Home path card — For players (`/`) | [Joan Azeka](https://unsplash.com/@jha900) | [bg43g7xTu2M](https://unsplash.com/photos/person-showing-pair-of-blue-and-white-running-shoes-bg43g7xTu2M) |
 | `king-of-the-court.jpg` | King of the Court spotlight (`/play/`) | [Lesli Whitecotton](https://unsplash.com/@lnicolern) | [UHZ_w1bOIvY](https://unsplash.com/photos/a-group-of-people-play-tennis-UHZ_w1bOIvY) |
 | `paddles-gear.jpg` | Prizes spotlight (`/play/`) | [Alex Saks](https://unsplash.com/@alexsaks) | [KO6QJcddk28](https://unsplash.com/photos/two-paddles-and-three-balls-on-a-tennis-court-KO6QJcddk28) |
+| `hero-play-page.jpg` | Play page hero (`/play/`) | [Venti Views](https://unsplash.com/@ventiviews) | [q97_OyjWS1U](https://unsplash.com/photos/pickleball-player-holds-a-ball-with-the-net-in-view-q97_OyjWS1U) |
+| `hero-organize.jpg` | Organize page hero (`/organize/`) | [Frankie Lopez](https://unsplash.com/@frankielopez) | [dA68yigQgSQ](https://unsplash.com/photos/black-and-white-tennis-net-dA68yigQgSQ) |
+| `hero-company.jpg` | Company page hero (`/company/`) | [Frankie Lopez](https://unsplash.com/@frankielopez) | [lXy07zu3NN4](https://unsplash.com/photos/white-net-on-green-field-lXy07zu3NN4) |
 
 ### Photo descriptions
 

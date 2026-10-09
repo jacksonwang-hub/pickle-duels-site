@@ -29,6 +29,7 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 |---|---|---|
 | `logo-pickle-duels.png` | Header logo, all pages | Own artwork — © RallyXP |
 | `founder-huyen.jpg` | Huyen Hoang's founder card (`/company/`) | Own photograph — © RallyXP |
+| `founder-jackson.jpg` | Jackson Wang's founder card (`/company/`) | Own photograph — © RallyXP |
 
 918×262 PNG with transparency (24 KB), rendered at 36px tall in the header
 (30px below 26rem). The header bar stays 68px regardless.
@@ -37,6 +38,13 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 cannot sit on the dark footer — the footer still uses the type-set wordmark in white.
 Supply a white-text variant (`logo-pickle-duels-light.png`) and the footer can use the
 real logo too.
+
+`founder-jackson.jpg` was cropped from a 312×673 original to 230×230 around the
+face using `sips --cropOffset`, at native resolution with no upscaling. That is the
+largest square the source allows while keeping the whole head in frame. It is sharp
+at the 160px display size on a standard display, but slightly soft on a 2x retina
+screen, which wants 320px. **A higher-resolution original would fix that** — anything
+400px square or larger is plenty.
 
 `founder-huyen.jpg` is an 800×800 source shown as a circular avatar
 (160px desktop, 120px mobile) cropped by `object-fit: cover`. Converted from a
@@ -59,7 +67,6 @@ See the README section *Replacing a placeholder with a real photo*.
 | VenueOS screenshot — registration list | `organize/` | Your own VenueOS capture |
 | VenueOS screenshot — tournament creation screen | `organize/` | Your own VenueOS capture |
 | drop six team pickleball photos into this gallery | `company/` | Your own photograph |
-| photo of Jackson playing pickleball | `company/` | Your own photograph |
 | photo of a tournament desk or organizer with a tablet | `/` | Stock or your own |
 | replace these with the official App Store and Google Play badge artwork | `play/` | Your own brand asset |
 | team photo 1 | `company/` | Your own photograph |

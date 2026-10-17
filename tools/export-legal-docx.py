@@ -42,10 +42,13 @@ PREPARED = {
         "reviewed by a lawyer and is not legal advice.",
     "terms":
         "No Terms of Service previously existed for Pickle Duels: the onrender /terms route is an "
-        "empty page, and the App Store listing links Terms of Use to clmsstudio.com for a "
-        "different app, Paddle Wars, published by CLMS Studio LLC. This draft is original text "
-        "written against what Pickle Duels and VenueOS actually do; no wording was taken from that "
-        "other document. This draft has not been reviewed by a lawyer and is not legal advice.",
+        "empty page, and the App Store listing links Terms of Use to a document belonging to an "
+        "unrelated company, covering a different app and a subscription Pickle Duels does not "
+        "offer (details in legal/AUDIT-NOTES.md). An early draft of this page reused phrasing from "
+        "that document -- 19 shared eight-word sequences, concentrated in the prohibited-use list "
+        "and the termination clause. Those passages were rewritten; the remaining overlap is one "
+        "standard licensing phrase and nothing longer. This draft has not been reviewed by a "
+        "lawyer and is not legal advice.",
 }
 
 PLACEHOLDER = re.compile(r"(\[PLACEHOLDER:[^\]]*\])")

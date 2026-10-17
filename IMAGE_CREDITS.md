@@ -31,7 +31,7 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 | File | Used for | Source |
 |---|---|---|
 | `logo-pickle-duels.png` | Header logo, all pages | Own artwork — © RallyXP |
-| `founder-huyen.jpg` | Huyen Hoang's founder card (`/company/`) | Own photograph — © RallyXP |
+| `founder-huyen.png` | Huyen Hoang's founder card (`/company/`) | Own illustration — © RallyXP |
 | `founder-jackson.png` | Jackson Wang's founder card (`/company/`) | Own illustration — © RallyXP |
 | `badge-app-store.png` | App Store button (home, `/play/`) | Official Apple badge artwork |
 | `badge-google-play.png` | Google Play button (home, `/play/`) | Official Google badge artwork |
@@ -49,12 +49,15 @@ real logo too.
 where JPEG puts ringing around the black outlines; `sips` on this machine cannot write
 WebP. 360px covers the 320 device pixels a 2x display needs at the 160px render size.
 
-Note the two founder cards now mix media: Huyen's is a photograph, Jackson's is an
-illustration. Worth settling on one style for both.
+Both founder avatars are now illustrations, but only Huyen's is transparent.
+Jackson's has a teal background baked into the file, so the two circles do not match.
+**A transparent version of Jackson's avatar would fix it with no code change** — the
+CSS background is already in place.
 
-`founder-huyen.jpg` is an 800×800 source shown as a circular avatar
-(160px desktop, 120px mobile) cropped by `object-fit: cover`. Converted from a
-396 KB PNG to a 64 KB JPEG with `sips`. A square source is ideal for this slot.
+`founder-huyen.png` is a transparent illustrated avatar, resized from a 1254×1254 WebP
+to 360×360 PNG with its alpha channel intact. The circle behind it is painted in CSS
+with `var(--volt)` on `.founder__media`, not baked into the file, so the colour stays a
+design token and any future transparent avatar picks it up automatically.
 
 An SVG would also be worth having: it would stay crisp at any size and on any
 display, and would likely be smaller than 24 KB.

@@ -654,6 +654,8 @@ a { color: inherit; }
   margin-bottom: var(--space-lg);
   border-radius: 50%;
   overflow: hidden;
+  /* Shows through a transparent avatar. An opaque image simply covers it. */
+  background: var(--volt);
 }
 .founder__media img,
 .founder__media .ph {

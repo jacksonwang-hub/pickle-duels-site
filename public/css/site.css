@@ -846,13 +846,84 @@ a { color: inherit; }
 
 /* --- Long-form legal / prose pages ---------------------------------------- */
 .prose { max-width: 70ch; }
-.prose h2 {
+/* Top-level sections are numbered automatically, using the same numbered
+   token as the VenueOS capability steps so the legal pages read as part of
+   the site rather than a bolted-on document. The draft banner's heading is
+   nested, so `.prose > h2` leaves it out of the count. */
+.prose { counter-reset: legal-section; }
+
+.prose > h2 {
+  counter-increment: legal-section;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6em;
   font-size: var(--step-2);
   margin-top: var(--space-2xl);
   margin-bottom: var(--space-sm);
-  text-transform: none;
+  text-transform: uppercase;
   letter-spacing: -0.015em;
 }
+.prose > h2::before {
+  content: counter(legal-section);
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: var(--r-pill);
+  background: var(--ink);
+  color: var(--volt);
+  font-size: 0.55em;
+  letter-spacing: 0;
+}
+.prose .review-notice h2 { text-transform: uppercase; }
+
+/* Contents */
+.legal-toc {
+  padding: var(--space-lg) var(--space-xl);
+  margin-bottom: var(--space-2xl);
+  background: var(--chalk);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+}
+.legal-toc h2 {
+  font-family: var(--font-display);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--court);
+  margin: 0 0 var(--space-md);
+}
+.legal-toc ol {
+  counter-reset: toc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-2xs) var(--space-lg);
+}
+@media (min-width: 42rem) { .legal-toc ol { grid-template-columns: 1fr 1fr; } }
+.legal-toc li { counter-increment: toc; margin: 0; }
+.legal-toc a {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.2rem 0;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: var(--step--1);
+}
+.legal-toc a::before {
+  content: counter(toc) ".";
+  color: var(--court);
+  font-weight: 600;
+  flex: none;
+  min-width: 1.4em;
+}
+.legal-toc a:hover { color: var(--court); text-decoration: underline; }
+
+/* Give each section a target offset clear of the sticky header. */
+.prose > h2[id] { scroll-margin-top: calc(var(--header-h) + 1rem); }
 .prose h3 {
   font-size: var(--step-1);
   margin-top: var(--space-xl);

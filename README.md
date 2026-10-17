@@ -240,7 +240,7 @@ Every added image needs a row in `IMAGE_CREDITS.md`.
 
 ## Legal pages and Word export
 
-`/privacy/` and `/terms/` are ordinary pages in `src/pages/`. Both carry a prominent
+`/privacy/`, `/terms/` and `/official-rules/` are ordinary pages in `src/pages/`. Both carry a prominent
 draft banner and `[PLACEHOLDER: ...]` markers; **neither has been reviewed by a lawyer.**
 
 To produce Word documents for counsel:
@@ -253,7 +253,7 @@ That writes both files to `legal/`, reading from `dist/<page>/index.html` so a d
 can never drift from what is published. Placeholders are highlighted yellow, tables and
 bullets are preserved, and each file ends with a note on what the draft was grounded in.
 
-Pass `privacy` or `terms` to export just one.
+Pass `privacy`, `terms` or `official-rules` to export just one.
 
 The exporter hand-builds the OOXML with the standard library — there is no Node, pandoc,
 or LibreOffice here, and macOS `textutil` flattens tables into prose.

@@ -27,6 +27,9 @@ PAGES = {
                 "Draft privacy policy covering the Pickle Duels website, player app, and VenueOS"),
     "terms": ("Pickle Duels Terms of Service", "Pickle-Duels-Terms-of-Service-DRAFT.docx",
               "Draft terms of service covering the Pickle Duels website, player app, and VenueOS"),
+    "official-rules": ("Pickle Duels Official Rules & Prize Terms",
+                       "Pickle-Duels-Official-Rules-PLACEHOLDER.docx",
+                       "Placeholder official rules for Pickle Duels gift card giveaways"),
 }
 
 # Where each draft came from, so a reviewer knows what it is grounded in.
@@ -49,6 +52,14 @@ PREPARED = {
         "and the termination clause. Those passages were rewritten; the remaining overlap is one "
         "standard licensing phrase and nothing longer. This draft has not been reviewed by a "
         "lawyer and is not legal advice.",
+    "official-rules":
+        "This is a structural skeleton for a US prize promotion, not a finished document. The "
+        "prize table reflects the gift cards currently advertised on the Play page ($50 Joola, "
+        "$25 Selkirk, $10 CRBN). The sections are those a promotion of this kind normally "
+        "requires; the substance is left open because the answers depend on decisions not yet "
+        "made -- most importantly whether this is a sweepstakes or a contest, and whether "
+        "earning points constitutes consideration. No giveaway should be run against this "
+        "document as written. It has not been reviewed by a lawyer and is not legal advice.",
 }
 
 PLACEHOLDER = re.compile(r"(\[PLACEHOLDER:[^\]]*\])")

@@ -677,11 +677,6 @@ a { color: inherit; }
 .founder h3 { margin-bottom: var(--space-sm); }
 .founder p { color: var(--slate); }
 
-/* --- Gallery -------------------------------------------------------------- */
-.gallery { display: grid; gap: var(--space-md); grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 48rem) { .gallery { grid-template-columns: repeat(3, 1fr); } }
-.gallery > * { border-radius: var(--r-photo); overflow: hidden; }
-
 /* --- Form ----------------------------------------------------------------- */
 .form-shell {
   display: grid;

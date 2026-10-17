@@ -75,15 +75,8 @@ See the README section *Replacing a placeholder with a real photo*.
 | VenueOS screenshot — pool play standings | `organize/` | Your own VenueOS capture |
 | VenueOS screenshot — registration list | `organize/` | Your own VenueOS capture |
 | VenueOS screenshot — tournament creation screen | `organize/` | Your own VenueOS capture |
-| drop six team pickleball photos into this gallery | `company/` | Your own photograph |
 | photo of a tournament desk or organizer with a tablet | `/` | Stock or your own |
 | replace these with the official App Store and Google Play badge artwork | `play/` | Your own brand asset |
-| team photo 1 | `company/` | Your own photograph |
-| team photo 2 | `company/` | Your own photograph |
-| team photo 3 | `company/` | Your own photograph |
-| team photo 4 | `company/` | Your own photograph |
-| team photo 5 | `company/` | Your own photograph |
-| team photo 6 | `company/` | Your own photograph |
 
 ## Licensing rules for this site
 

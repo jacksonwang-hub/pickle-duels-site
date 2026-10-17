@@ -32,7 +32,7 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 |---|---|---|
 | `logo-pickle-duels.png` | Header logo, all pages | Own artwork — © RallyXP |
 | `founder-huyen.jpg` | Huyen Hoang's founder card (`/company/`) | Own photograph — © RallyXP |
-| `founder-jackson.jpg` | Jackson Wang's founder card (`/company/`) | Own photograph — © RallyXP |
+| `founder-jackson.png` | Jackson Wang's founder card (`/company/`) | Own illustration — © RallyXP |
 | `badge-app-store.png` | App Store button (home, `/play/`) | Official Apple badge artwork |
 | `badge-google-play.png` | Google Play button (home, `/play/`) | Official Google badge artwork |
 
@@ -44,12 +44,13 @@ cannot sit on the dark footer — the footer still uses the type-set wordmark in
 Supply a white-text variant (`logo-pickle-duels-light.png`) and the footer can use the
 real logo too.
 
-`founder-jackson.jpg` was cropped from a 312×673 original to 230×230 around the
-face using `sips --cropOffset`, at native resolution with no upscaling. That is the
-largest square the source allows while keeping the whole head in frame. It is sharp
-at the 160px display size on a standard display, but slightly soft on a 2x retina
-screen, which wants 320px. **A higher-resolution original would fix that** — anything
-400px square or larger is plenty.
+`founder-jackson.png` is an illustrated avatar, resized from a 1254×1254 WebP to
+360×360 PNG. PNG rather than JPEG because the artwork is line work on flat colour,
+where JPEG puts ringing around the black outlines; `sips` on this machine cannot write
+WebP. 360px covers the 320 device pixels a 2x display needs at the 160px render size.
+
+Note the two founder cards now mix media: Huyen's is a photograph, Jackson's is an
+illustration. Worth settling on one style for both.
 
 `founder-huyen.jpg` is an 800×800 source shown as a circular avatar
 (160px desktop, 120px mobile) cropped by `object-fit: cover`. Converted from a

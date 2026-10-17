@@ -33,6 +33,8 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 | `logo-pickle-duels.png` | Header logo, all pages | Own artwork — © RallyXP |
 | `founder-huyen.jpg` | Huyen Hoang's founder card (`/company/`) | Own photograph — © RallyXP |
 | `founder-jackson.jpg` | Jackson Wang's founder card (`/company/`) | Own photograph — © RallyXP |
+| `badge-app-store.png` | App Store button (home, `/play/`) | Official Apple badge artwork |
+| `badge-google-play.png` | Google Play button (home, `/play/`) | Official Google badge artwork |
 
 918×262 PNG with transparency (24 KB), rendered at 36px tall in the header
 (30px below 26rem). The header bar stays 68px regardless.
@@ -96,8 +98,17 @@ strings), the ball (perforated), and the net height before using a photo.
 
 ## App store badges
 
-The App Store and Google Play buttons are **custom-styled stand-ins**, not official
-badge artwork. Replace them before launch and follow each store's guidelines:
+The official Apple and Google badge artwork is now in place (240×80 PNG, rendered
+at 48px tall). Both stores forbid altering their badges, so these are scaled only —
+never recoloured, cropped, re-typeset, or given effects.
+
+They are the black variants, which read correctly on this site because every
+placement sits on a dark background (the home hero, the Play hero, and the Play
+CTA band). **If a badge is ever placed on a light background, swap in the white
+variant** rather than restyling this one.
 
 - Apple: <https://developer.apple.com/app-store/marketing/guidelines/>
 - Google Play: <https://play.google.com/intl/en_us/badges/>
+
+Both currently link to `[PLACEHOLDER: iOS App Store URL]` and
+`[PLACEHOLDER: Google Play Store URL]`.

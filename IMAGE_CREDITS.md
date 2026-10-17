@@ -110,5 +110,7 @@ variant** rather than restyling this one.
 - Apple: <https://developer.apple.com/app-store/marketing/guidelines/>
 - Google Play: <https://play.google.com/intl/en_us/badges/>
 
-Both currently link to `[PLACEHOLDER: iOS App Store URL]` and
-`[PLACEHOLDER: Google Play Store URL]`.
+Both link to the live store listings:
+
+- App Store: <https://apps.apple.com/us/app/pickle-duels/id6745139136>
+- Google Play: <https://play.google.com/store/apps/details?id=com.capsulekaiba.pickleduels>

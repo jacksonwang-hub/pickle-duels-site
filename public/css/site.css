@@ -843,3 +843,67 @@ a { color: inherit; }
     max-width: min(18rem, calc(100% - 2rem));
   }
 }
+
+/* --- Long-form legal / prose pages ---------------------------------------- */
+.prose { max-width: 70ch; }
+.prose h2 {
+  font-size: var(--step-2);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-sm);
+  text-transform: none;
+  letter-spacing: -0.015em;
+}
+.prose h3 {
+  font-size: var(--step-1);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xs);
+}
+.prose p, .prose ul, .prose ol { margin-bottom: var(--space-md); color: var(--slate); }
+.prose p strong, .prose li strong { color: var(--ink); font-weight: 600; }
+.prose ul, .prose ol { padding-left: 1.3em; }
+.prose li { margin-bottom: var(--space-2xs); }
+.prose a { color: var(--court); text-underline-offset: 2px; }
+.prose > p:first-of-type { font-size: var(--step-1); color: var(--ink); }
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-lg);
+  font-size: var(--step--1);
+}
+.prose th, .prose td {
+  text-align: left;
+  padding: var(--space-sm);
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.prose th { font-weight: 600; color: var(--ink); }
+.prose td { color: var(--slate); }
+.table-scroll { overflow-x: auto; }
+
+.doc-meta {
+  padding: var(--space-md) 0;
+  margin-bottom: var(--space-lg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-size: var(--step--1);
+  color: var(--slate);
+}
+
+/* Draft banner. Deliberately loud — this must not ship unnoticed. */
+.review-notice {
+  padding: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+  background: var(--mint);
+  border-left: 4px solid var(--clay);
+  border-radius: var(--r-photo);
+}
+.review-notice h2 {
+  margin-top: 0;
+  font-size: var(--step-1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+.review-notice p, .review-notice li { color: var(--ink); }
+.review-notice :last-child { margin-bottom: 0; }

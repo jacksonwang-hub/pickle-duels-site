@@ -978,3 +978,11 @@ a { color: inherit; }
 }
 .review-notice p, .review-notice li { color: var(--ink); }
 .review-notice :last-child { margin-bottom: 0; }
+
+/* Remaining-stock note beside a prize. Clay is decorative-grade contrast only,
+   so the count keeps the body colour and leans on weight instead. */
+.prize-left {
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}

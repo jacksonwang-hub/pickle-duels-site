@@ -36,6 +36,7 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 | `venueos-create-tournament.png` | Capability 1, Create tournaments (`/organize/`) | Own product mockup — © RallyXP |
 | `venueos-registrations.png` | Capability 2, Manage registrations (`/organize/`) | Own product mockup — © RallyXP |
 | `venueos-check-in.png` | Capability 3, Check-in on event day (`/organize/`) | Own product mockup — © RallyXP |
+| `organizers-court.webp` | Home path card — For organizers & clubs (`/`) | [PLACEHOLDER: source and licence for the isometric court illustration] |
 | `venueos-pool-play.png` | Capability 4, Track pool play (`/organize/`) | Own product mockup — © RallyXP |
 | `venueos-brackets.png` | Capability 5, Track bracket play (`/organize/`) | Own product mockup — © RallyXP |
 | `venueos-invite-past-players.png` | Capability 6, Re-engage past participants (`/organize/`) | Own product mockup — © RallyXP |
@@ -75,7 +76,6 @@ See the README section *Replacing a placeholder with a real photo*.
 
 | Slot | Page(s) | Source |
 |---|---|---|
-| photo of a tournament desk or organizer with a tablet | `/` | Stock or your own |
 | replace these with the official App Store and Google Play badge artwork | `play/` | Your own brand asset |
 
 ## Licensing rules for this site

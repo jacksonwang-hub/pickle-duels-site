@@ -12,7 +12,7 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 | File | Used for | Photographer | Source |
 |---|---|---|---|
 | `hero-play.jpg` | Homepage hero (`/`) | [eedgar ivann](https://unsplash.com/@eedgarivann) | [7lsgTpUfnes](https://unsplash.com/photos/two-people-are-playing-pickleball-on-the-court-7lsgTpUfnes) |
-| `players-duel.png` | Home path card — For players (`/`) | [PLACEHOLDER: source and licence for the two-player illustration] |
+| `players-duel.webp` | Home path card — For players (`/`) | [PLACEHOLDER: source and licence for the two-player illustration] |
 | `king-of-the-court.jpg` | King of the Court spotlight (`/play/`) | [Lesli Whitecotton](https://unsplash.com/@lnicolern) | [UHZ_w1bOIvY](https://unsplash.com/photos/a-group-of-people-play-tennis-UHZ_w1bOIvY) |
 | `paddles-gear.jpg` | Prizes spotlight (`/play/`) | [Alex Saks](https://unsplash.com/@alexsaks) | [KO6QJcddk28](https://unsplash.com/photos/two-paddles-and-three-balls-on-a-tennis-court-KO6QJcddk28) |
 | `hero-play-page.jpg` | Play page hero (`/play/`) | [Venti Views](https://unsplash.com/@ventiviews) | [q97_OyjWS1U](https://unsplash.com/photos/pickleball-player-holds-a-ball-with-the-net-in-view-q97_OyjWS1U) |
@@ -22,10 +22,11 @@ attribution required. Credited here anyway, as Unsplash's API guidelines ask.
 ### Photo descriptions
 
 - **`hero-play.jpg`** — Two people are playing pickleball on the court
-- **`players-duel.png`** — Two players facing off across the net. **389x241 — too small
-  for this slot.** It is upscaled 1.4x even on a standard display and 2.8x on retina, where
-  the slot wants 1092px. Its 1.614 aspect is also narrower than 16:9, so `object-fit`
-  hides about 9% off the top and bottom. **Re-export at 1600x900 to fix both.**
+- **`players-duel.webp`** — Two players facing off across the net. 778x482, 41 KB.
+  Sharp on a standard display (rendered at 0.70x), but still upscaled 1.40x on a retina
+  screen, which wants 1092px. Its 1.614 aspect is narrower than 16:9, so `object-fit`
+  hides about 9% — roughly 4.6% off the top and the same off the bottom.
+  **A 1600x900 export would make it pixel-perfect and remove the crop.**
 - **`king-of-the-court.jpg`** — Pickle ball game
 - **`paddles-gear.jpg`** — Pickleball session details — paddle, ball, and court setup. Gear I use → linktr.ee/alexsaks.inspiration
 
